@@ -246,8 +246,9 @@
     <Compile Include="Models\Post\Client.cs" />
     <Compile Include="Models\Post\Merchant.cs" />
     <Compile Include="Models\Post\TransactionPost.cs" />
-    <Compile Include="Models\Post\TransactionQuery.cs" />
-    <Compile Include="Models\Post\TransactionReport.cs" />
+    <Compile Include="Models\Post\TransactionQueryPost.cs" />
+    <Compile Include="Models\Post\TransactionReportPost.cs" />
+    <Compile Include="Models\Response\Acquirer.cs" />
     <Compile Include="Models\Response\AcquirerTransactions.cs" />
     <Compile Include="Models\Response\CustomerInfo.cs" />
     <Compile Include="Models\Response\Fx.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -11,8 +12,10 @@ namespace ReportingAPI.Models.Response
 
         public int currentPage { get; set; }
 
+        [StringLength(256)]
         public string newtPageUrl { get; set; }
 
+        [StringLength(256)]
         public string prevPageUrl { get; set; }
 
         public int from { get; set; }

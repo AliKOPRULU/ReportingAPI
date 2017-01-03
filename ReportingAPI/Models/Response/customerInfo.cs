@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,77 +10,81 @@ namespace ReportingAPI.Models.Response
     {
         public int id​ { get; set; }
 
+        [DataType(DataType.DateTime),DisplayFormat(DataFormatString ="{0:yyyy-MM-dd hh-mm-ss}")]
         public DateTime createdAt { get; set; }
 
+        [DataType(DataType.DateTime), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd hh-mm-ss}")]
         public DateTime updatedAt { get; set; }
 
+        [DataType(DataType.DateTime), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd hh-mm-ss}")]
         public DateTime deletedAt { get; set; }
 
-        private String number;
+        private String number { get; set; }
 
-        private String expiryMonth;
+        private String expiryMonth { get; set; }
 
-        private String expiryYear;
+        private String expiryYear { get; set; }
 
-        private String startMonth;
+        private String startMonth { get; set; }
 
-        private String startYear;
+        private String startYear { get; set; }
 
-        private String issueNumber;
+        private String issueNumber { get; set; }
 
-        private String email;
+        private String email { get; set; }
 
-        private String birthday;
+        [DataType(DataType.DateTime), DisplayFormat(DataFormatString = "{0:yyyy-MM-dd hh-mm-ss}")]
+        private String birthday { get; set; }
 
-        private String gender;
+        private String gender { get; set; }
 
-        private String billingTitle;
+        private String billingTitle { get; set; }
 
-        private String billingFirstName;
+        private String billingFirstName { get; set; }
 
-        private String billingLastName;
+        private String billingLastName { get; set; }
 
-        private String billingCompany;
+        private String billingCompany { get; set; }
 
-        private String billingAddress1;
+        private String billingAddress1 { get; set; }
 
-        private String billingAddress2;
+        private String billingAddress2 { get; set; }
 
-        private String billingCity;
+        private String billingCity { get; set; }
 
-        private String billingPostCode;
+        private String billingPostCode { get; set; }
 
-        private String billingState;
+        private String billingState { get; set; }
 
-        private String billingCountry;
+        private String billingCountry { get; set; }
 
-        private String billingPhone;
+        private String billingPhone { get; set; }
 
-        private String billingFax;
+        private String billingFax { get; set; }
 
-        private String shippingTitle;
+        private String shippingTitle { get; set; }
 
-        private String shippingFirstName;
+        private String shippingFirstName { get; set; }
 
-        private String shippingLastName;
+        private String shippingLastName { get; set; }
 
-        private String shippingCompany;
+        private String shippingCompany { get; set; }
 
-        private String shippingAddress1;
+        private String shippingAddress1 { get; set; }
 
-        private String shippingAddress2;
+        private String shippingAddress2 { get; set; }
 
-        private String shippingCity;
+        private String shippingCity { get; set; }
 
-        private String shippingPostCode;
+        private String shippingPostCode { get; set; }
 
-        private String shippingState;
+        private String shippingState { get; set; }
 
-        private String shippingCountry;
+        private String shippingCountry { get; set; }
 
-        private String shippingPhone;
+        private String shippingPhone { get; set; }
 
-        private String shippingFax;
+        private String shippingFax { get; set; }
 
     }
 }

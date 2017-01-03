@@ -11,7 +11,6 @@ namespace ReportingAPI.Models.Response
         [StringLength(64)]
         public string status { get; set; }
 
-        public IQueryable<TransactionReport> transactionReport { get; set; }//IQueryable, belli bir uzak veri kaynağından(web service,database…) verileri sorgulamak için işlevsellik sağlar
-        //http://melihorhan.com/ienumerable-ve-iqueryable-arasindaki-farklar-nelerdir/
+        public IQueryable<TransactionReport> transactionReport { get; set; }        
     }
 }

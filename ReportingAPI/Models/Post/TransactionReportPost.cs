@@ -6,7 +6,7 @@ using System.Web;
 
 namespace ReportingAPI.Models.Post
 {
-    public class TransactionReport
+    public class TransactionReportPost
     {
         [DataType(DataType.DateTime), DisplayFormat(DataFormatString = ("{0:yyyy-MM-dd}"))]
         public DateTime fromDate { get; set; }

@@ -7,5 +7,6 @@ namespace ReportingAPI.Models.Response
 {
     public class AcquirerTransactions
     {
+        public Acquirer acquirer;
     }
 }

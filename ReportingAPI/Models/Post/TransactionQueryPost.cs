@@ -6,7 +6,7 @@ using System.Web;
 
 namespace ReportingAPI.Models.Post
 {
-    public class TransactionQuery
+    public class TransactionQueryPost
     {
         [DataType(DataType.DateTime), DisplayFormat(DataFormatString = ("{0:yyyy-MM-dd}"))]
         public DateTime fromDate { get; set; }
@@ -22,7 +22,7 @@ namespace ReportingAPI.Models.Post
 
         public int merchantId { get; set; }
 
-        public int acquirerId { get; set; }
+        public int acquirerId { get; set; }//edinen tüccar
 
         [StringLength(32)]
         public string paymentMethod { get; set; }
@@ -33,7 +33,7 @@ namespace ReportingAPI.Models.Post
         [StringLength(128)]
         public string filterField { get; set; }
 
-        [StringLength(128)]
+        [StringLength(256)]
         public string filterValue { get; set; }
 
         public int page { get; set; }
